@@ -8,7 +8,7 @@ branches:
   - travis-ci
 
 env:
-- PLATFORM="-j4 MACHINE=kvm_x86_64 all"
+- PLATFORM="-j4 MACHINE=kvm_x86_64"
 
 before_install:
 - cd build-config
@@ -19,5 +19,9 @@ before_install:
 install: true
 
 script:
-    #- travis_wait 50 make $PLATFORM
-- make $PLATFORM
+- make $PLATFORM download
+- make $PLATFORM crosstool-ng
+- make $PLATFORM xtools
+- make $PLATFORM uclibc
+- travis_wait 50 make $PLATFORM kernel
+- make $PLATFORM all
