@@ -1,6 +1,7 @@
 ********************************
 Open Network Install Environment
 ********************************
+[![Build Status](https://travis-ci.org/vitalivanov/onie.svg?branch=travis-ci)](https://travis-ci.org/vitalivanov/onie)
 
 ONIE is a small operating system, pre-installed on bare
 metal network switches, that provides an environment for automated
