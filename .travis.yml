@@ -8,13 +8,13 @@ branches:
   - travis-ci
 
 env:
-- PLATFORM=-j4 MACHINE=kvm_x86_64 all
+- PLATFORM="-j4 MACHINE=kvm_x86_64 all"
 
 before_install:
 - cd build-config
 - sudo apt-get update
 - sudo apt-get install build-essential
-- make debian-prepare-build-host
+  #- make debian-prepare-build-host
 install: true
 
 script:
