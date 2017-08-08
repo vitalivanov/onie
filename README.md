@@ -1,4 +1,4 @@
-#Open Network Install Environment
+# Open Network Install Environment
 
 [![Build Status](https://travis-ci.org/vitalivanov/onie.svg?branch=travis-ci)](https://travis-ci.org/vitalivanov/onie)
 
@@ -8,7 +8,7 @@ provisioning.
 
 Read the [ONIE Documentation](https://opencomputeproject.github.io/onie) for more info.
 
-#Mailing List and Collaboration
+# Mailing List and Collaboration
 
 Join the conversation -- send questions, comments and ideas to opencompute-onie@lists.opencompute.org.
 
