@@ -1,6 +1,6 @@
 language: generic
 sudo: required
-dist: trusty
+#dist: trusty
 
 branches:
   only:
@@ -21,7 +21,7 @@ install: true
 script:
 - make $PLATFORM download
 - make $PLATFORM crosstool-ng
-- make $PLATFORM xtools
+- travis_wait 50 make $PLATFORM xtools
 - make $PLATFORM uclibc
 - travis_wait 50 make $PLATFORM kernel
-- make $PLATFORM all
+- travis_wait 50 make $PLATFORM all
